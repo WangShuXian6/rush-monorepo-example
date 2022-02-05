@@ -35,7 +35,7 @@
     "allowSyntheticDefaultImports": true,
     "types": ["node"],
     "noErrorTruncation": true, // move me up to @sentry/typescript
-    "jsx": "react-jsx",
+    "jsx": "react-jsx"
     //"isolatedModules": true
   }
 }

@@ -53,5 +53,5 @@
       }
     ]
   },
-  "customSyntax" : "postcss-scss"
+  "customSyntax": "postcss-scss"
 }
