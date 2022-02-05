@@ -5,9 +5,25 @@
   "description": "This template is part of the documentation of the [Rush](https://rushjs.io/) tool. It contains documented templates for all the standard Rush configuration files. It also includes three barebones projects that illustrate some dependency relationships in a Rush repo:",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier":"rush prettier"
+    "prettier": "rush prettier"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "postcss-scss": "^4.0.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-prettier": "^2.0.0"
+  }
 }

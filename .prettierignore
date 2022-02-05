@@ -26,3 +26,12 @@ lib
 
 # Prettier reformats code blocks inside Markdown, which affects rendered output
 *.md
+
+
+# 
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+src/lib/*
+node_modules

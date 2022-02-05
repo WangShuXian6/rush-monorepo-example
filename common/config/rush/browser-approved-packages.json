@@ -3,7 +3,19 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@rushstack/heft",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/react",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "my-controls",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react",
       "allowedCategories": [ "production" ]
     },
     {

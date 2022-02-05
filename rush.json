@@ -62,7 +62,7 @@
      * The default value is false to avoid legacy compatibility issues.
      * It is strongly recommended to set strictPeerDependencies=true.
      */
-    "strictPeerDependencies": true,
+    "strictPeerDependencies": true
 
     /**
      * Configures the strategy used to select versions during installation.
@@ -214,9 +214,9 @@
     "reviewCategories": [
       // Some example categories:
       "production", // projects that ship to production
-      "tools",      // non-shipping projects that are part of the developer toolchain
-      "prototypes"  // experiments that should mostly be ignored by the review process
-    ],
+      "tools", // non-shipping projects that are part of the developer toolchain
+      "prototypes" // experiments that should mostly be ignored by the review process
+    ]
 
     /**
      * A list of NPM package scopes that will be excluded from review.
@@ -243,7 +243,7 @@
      * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
      * RegExp escapes need two backslashes, and ordinary periods should be "\\.".
      */
-     
+
     // "allowedEmailRegExps": [
     //   "[^@]+@users\\.noreply\\.github\\.com",
     //   "travis@example\\.org"
@@ -292,13 +292,11 @@
      * to retrieve the latest activity for the remote master branch.
      */
     // "url": "https://github.com/microsoft/rush-example",
-
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
      */
     // "defaultBranch": "master",
-
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
      * not set or if a remote matching the provided remote URL is not found.
@@ -356,7 +354,7 @@
     //    * The folder name for this variant.
     //    */
     //   "variantName": "old-sdk",
-    // 
+    //
     //   /**
     //    * An informative description
     //    */
@@ -390,74 +388,6 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
-    {
-      /**
-       * The NPM package name of the project (must match package.json)
-       */
-      "packageName": "my-app",
-
-      /**
-       * The path to the project folder, relative to the rush.json config file.
-       */
-      "projectFolder": "apps/my-app",
-
-      /**
-       * An optional category for usage in the "browser-approved-packages.json"
-       * and "nonbrowser-approved-packages.json" files.  The value must be one of the
-       * strings from the "reviewCategories" defined above.
-       */
-      "reviewCategory": "production",
-
-      /**
-       * A list of local projects that appear as devDependencies for this project, but cannot be
-       * locally linked because it would create a cyclic dependency; instead, the last published
-       * version will be installed in the Common folder.
-       */
-      "cyclicDependencyProjects": [
-        // "my-toolchain"
-      ],
-
-      /**
-       * If true, then this project will be ignored by the "rush check" command.
-       * The default value is false.
-       */
-      // "skipRushCheck": false,
-
-      /**
-       * A flag indicating that changes to this project will be published to npm, which affects
-       * the Rush change and publish workflows. The default value is false.
-       * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
-       */
-      // "shouldPublish": false,
-
-      /**
-       * Facilitates postprocessing of a project's files prior to publishing.
-       *
-       * If specified, the "publishFolder" is the relative path to a subfolder of the project folder.
-       * The "rush publish" command will publish the subfolder instead of the project folder.  The subfolder
-       * must contain its own package.json file, which is typically a build output.
-       */
-      // "publishFolder": "temp/publish",
-
-      /**
-       * An optional version policy associated with the project.  Version policies are defined
-       * in "version-policies.json" file.  See the "rush publish" documentation for more info.
-       * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
-       */
-      // "versionPolicyName": ""
-    },
-
-    {
-      "packageName": "my-controls",
-      "projectFolder": "libraries/my-controls",
-      "reviewCategory": "production"
-    },
-
-    {
-      "packageName": "my-toolchain",
-      "projectFolder": "tools/my-toolchain",
-      "reviewCategory": "tools"
-    },
     {
       "packageName": "package-a",
       "projectFolder": "packages/packageA",

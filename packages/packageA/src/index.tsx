@@ -1,5 +1,5 @@
-import styles from "./index.module.scss";
-console.log('a')
+import styles from './index.module.scss';
+console.log('a');
 export const a = () => {
-  return <div classname={styles.a}>a</div>;
+  return <div className={styles.a}>a</div>;
 };
