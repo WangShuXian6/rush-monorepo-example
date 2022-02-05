@@ -1,0 +1,13 @@
+{
+  "name": "rush-example-master",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This template is part of the documentation of the [Rush](https://rushjs.io/) tool. It contains documented templates for all the standard Rush configuration files. It also includes three barebones projects that illustrate some dependency relationships in a Rush repo:",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier":"rush prettier"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
