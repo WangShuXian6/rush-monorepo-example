@@ -39,6 +39,6 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-rush publish --apply --publish --registry https://registry.npmjs.org/ --npm-auth-token YWlybXVzaWM6a2VsZXFpc2h1aTg5MA== --add-commit-details
-rush publish --apply --publish --registry https://registry.npmjs.org/ --npm-auth-token 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 --add-commit-details
+rush publish --apply --publish --registry https://registry.npmjs.org/ --npm-auth-token 1aTg5MA== --add-commit-details
+rush publish --apply --publish --registry https://registry.npmjs.org/ --npm-auth-token npm_bCBzUC2kkcLJ --add-commit-details
 rush publish --add-commit-details

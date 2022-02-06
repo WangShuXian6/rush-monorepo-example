@@ -63,9 +63,9 @@
     /**
      * 应该从src文件夹复制到目标文件夹的文件扩展名。
      */
-    // "fileExtensions": [
-    //   ".json", ".css"
-    // ],
+    "fileExtensions": [
+      ".scss", ".css"
+    ]
     /**
      * 应该明确包括的Glob模式。
      */
