@@ -1,90 +1,90 @@
-/**
- * This is configuration file is used for advanced publishing configurations with Rush.
- * More documentation is available on the Rush website: https://rushjs.io
+/**这是配置文件，用于Rush的高级发布配置。
+ * 更多的文件可以在Rush网站上找到：https://rushjs.io。
  */
 
 /**
- * A list of version policy definitions.  A "version policy" is a custom package versioning
- * strategy that affects "rush change", "rush version", and "rush publish".  The strategy applies
- * to a set of projects that are specified using the "versionPolicyName" field in rush.json.
+ * 一个版本策略定义的列表。 一个 "版本策略 "是一个自定义的软件包版本控制策略。
+ * 策略，它影响到 "Rush change"、"Rush version "和 "Rush publish"。 该策略适用于
+ * 适用于一组项目，这些项目是用rush.json的 "versionPolicyName "字段指定的。
  */
 [
-  {
-    /**
-     * (Required) Indicates the kind of version policy being defined ("lockStepVersion" or "individualVersion").
-     *
-     * The "lockStepVersion" mode specifies that the projects will use "lock-step versioning".  This
-     * strategy is appropriate for a set of packages that act as selectable components of a
-     * unified product.  The entire set of packages are always published together, and always share
-     * the same NPM version number.  When the packages depend on other packages in the set, the
-     * SemVer range is usually restricted to a single version.
-     */
-    "definitionName": "lockStepVersion",
+  // {
+  //    /**
+  //    *（必填）表示正在定义的版本策略的种类（"lockStepVersion "或 "individualVersion"）。
+  //    *
+  //    * "lockStepVersion "模式指定项目将使用 "lock-step versioning"。 这种
+  //    * 策略适合于一组作为一个统一产品的可选择组件的包。
+  //    * 统一的产品。 整套软件包总是一起发布，并且总是共享
+  //    * 同一个NPM版本号。 当这些软件包依赖于这组中的其他软件包时，SemVer的范围通常被限制。
+  //    * SemVer范围通常被限制在一个单一版本。
+  //    */
+  //   "definitionName": "lockStepVersion",
 
-    /**
-     * (Required) The name that will be used for the "versionPolicyName" field in rush.json.
-     * This name is also used command-line parameters such as "--version-policy"
-     * and "--to-version-policy".
-     */
-    "policyName": "MyBigFramework",
+  //   /**
+  //    *  (必填)将用于rush.json中 "versionPolicyName "字段的名称。
+  //    * 这个名字也用于命令行参数，如"--版本政策"
+  //    * 和"-to-version-policy"。
+  //    */
+  //   "policyName": "MyBigFramework",
 
-    /**
-     * (Required) The current version.  All packages belonging to the set should have this version
-     * in the current branch.  When bumping versions, Rush uses this to determine the next version.
-     * (The "version" field in package.json is NOT considered.)
-     */
-    "version": "1.0.0",
+  //   /**
+  //   * （必填）当前版本。 所有属于该集合的软件包都应该有这个版本
+  //    * 在当前分支中。 在提升版本时，Rush使用这个版本来决定下一个版本。
+  //    * (package.json中的 "版本 "字段不被考虑。)
+  //    */
+  //   "version": "1.0.0",
 
-    /**
-     * (Required) The type of bump that will be performed when publishing the next release.
-     * When creating a release branch in Git, this field should be updated according to the
-     * type of release.
-     *
-     * Valid values are: "prerelease", "release", "minor", "patch", "major"
-     */
-    "nextBump": "prerelease",
+  //   /**
+  //     * （必填）发布下一个版本时将进行的碰撞类型。
+  //    * 当在Git中创建一个发布分支时，这个字段应该根据发布类型来更新。
+  //    * 发布的类型。
+  //    *
+  //    *
+  //    * Valid values are: "prerelease", "release", "minor", "patch", "major"
+  //    */
+  //   "nextBump": "prerelease",
 
-    /**
-     * (Optional) If specified, all packages in the set share a common CHANGELOG.md file.
-     * This file is stored with the specified "main" project, which must be a member of the set.
-     *
-     * If this field is omitted, then a separate CHANGELOG.md file will be maintained for each
-     * package in the set.
-     */
-    "mainProject": "package-a"
-  },
+  //   /**
+  //    * （可选）如果指定了，该集合中的所有包都共享一个共同的CHANGELOG.md文件。
+  //    * 这个文件与指定的 "主 "项目一起存储，该项目必须是该组的成员。
+  //    *
+  //    * 如果这个字段被省略，那么一个单独的CHANGELOG.md文件将被维护给每个
+  //    * 包都有一个单独的CHANGELOG.md文件。
+  //    */
+  //    "mainProject": "airmusic-package-a"
+  // },
 
-  {
-    /**
-     * (Required) Indicates the kind of version policy being defined ("lockStepVersion" or "individualVersion").
-     *
-     * The "individualVersion" mode specifies that the projects will use "individual versioning".
-     * This is the typical NPM model where each package has an independent version number
-     * and CHANGELOG.md file.  Although a single CI definition is responsible for publishing the
-     * packages, they otherwise don't have any special relationship.  The version bumping will
-     * depend on how developers answer the "rush change" questions for each package that
-     * is changed.
-     */
-    "definitionName": "individualVersion",
+  // {
+  //   /**
+  //     * (必填)表示被定义的版本策略的种类("lockStepVersion "或 "individualVersion")。
+  //    *
+  //    * "individualVersion "模式指定项目将使用 "独立版本"。
+  //    * 这是典型的NPM模式，每个包都有一个独立的版本号
+  //    * 和 CHANGELOG.md 文件。 尽管一个CI定义负责发布这些
+  //    * 包，但它们在其他方面没有任何特殊关系。 版本碰撞将
+  //    * 取决于开发者如何回答每个软件包的 "急变 "问题。
+  //    * 被改变。
+  //    */
+  //   "definitionName": "individualVersion",
 
-    "policyName": "MyRandomLibraries",
+  //   "policyName": "MyRandomLibraries",
 
-    /**
-     * (Optional) This can be used to enforce that all packages in the set must share a common
-     * major version number, e.g. because they are from the same major release branch.
-     * It can also be used to discourage people from accidentally making "MAJOR" SemVer changes
-     * inappropriately.  The minor/patch version parts will be bumped independently according
-     * to the types of changes made to each project, according to the "rush change" command.
-     */
-    "lockedMajor": 3,
+  //   /**
+  //   * (可选)这可以用来强制要求该集合中的所有软件包必须共享一个共同的
+  //    * 主版本号，例如，因为它们来自同一个主发布分支。
+  //    * 它也可以用来阻止人们不小心对SemVer进行 "重大 "修改。
+  //    *不适当的。 小版本/补丁版本部分将根据
+  //    * 根据 "rush change "命令，根据对每个项目所做的修改类型，独立地进行碰撞。
+  //    */
+  //   "lockedMajor": 3,
 
-    /**
-     * (Optional) When publishing is managed by Rush, by default the "rush change" command will
-     * request changes for any projects that are modified by a pull request. These change entries
-     * will produce a CHANGELOG.md file. If you author your CHANGELOG.md manually or announce updates
-     * in some other way, set "exemptFromRushChange" to true to tell "rush change" to ignore the projects
-     * belonging to this version policy.
-     */
-    "exemptFromRushChange": false
-  }
+  //   /**
+  //   * (可选)当发布由Rush管理时，默认情况下 "rush change "命令将
+  //    * 为任何被拉动请求所修改的项目请求更改。这些修改条目
+  //    * 将产生一个CHANGELOG.md文件。如果你手动编写你的CHANGELOG.md或以其他方式宣布更新
+  //    * 如果你手动编写CHANGELOG.md或以其他方式宣布更新，请将 "exemptFromRushChange "设置为 "true"，以告诉 "rush change "忽略属于该版本策略的项目。
+  //    * 属于这个版本策略的项目。
+  //    */
+  //   "exemptFromRushChange": false
+  // }
 ]

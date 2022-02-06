@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "airmusic-package-a",
+      "comment": "o",
+      "type": "patch"
+    }
+  ],
+  "packageName": "airmusic-package-a",
+  "email": "airmusic@msn.com"
+}

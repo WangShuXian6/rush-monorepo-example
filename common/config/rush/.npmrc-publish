@@ -18,3 +18,8 @@
 #
 #   //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
 #
+registry=https://registry.npmjs.org/
+email=airmusic@msn.com
+always-auth=true
+# _auth="YWlybXVzaWM6a2VsZXFpc2h1aTg5MA=="
+//registry.npmjs.org/:_authToken=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

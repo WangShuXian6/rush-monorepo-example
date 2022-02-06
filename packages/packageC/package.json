@@ -1,6 +1,6 @@
 {
-  "name": "package-a",
-  "version": "1.0.0",
+  "name": "airmusic-package-c",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

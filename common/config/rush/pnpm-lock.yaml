@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@rush-temp/package-a': file:./projects/package-a.tgz
-  '@rush-temp/package-b': file:./projects/package-b.tgz
+  '@rush-temp/airmusic-package-b': file:./projects/airmusic-package-b.tgz
+  '@rush-temp/airmusic-package-c': file:./projects/airmusic-package-c.tgz
   '@rushstack/heft': ^0.44.2
   '@types/node': 17.0.15
   '@types/react': ^17.0.39
@@ -10,8 +10,8 @@ specifiers:
   typescript: ^4.5.5
 
 dependencies:
-  '@rush-temp/package-a': file:projects/package-a.tgz
-  '@rush-temp/package-b': file:projects/package-b.tgz
+  '@rush-temp/airmusic-package-b': file:projects/airmusic-package-b.tgz
+  '@rush-temp/airmusic-package-c': file:projects/airmusic-package-c.tgz
   '@rushstack/heft': 0.44.2
   '@types/node': 17.0.15
   '@types/react': 17.0.39
@@ -525,9 +525,9 @@ packages:
       commander: 2.20.3
     dev: false
 
-  file:projects/package-a.tgz:
-    resolution: {integrity: sha512-EwJUCDsZA7uj+w03wbbjN/WKSWHaqO7KGkeD1SJC2SvPd7X6xlbb6k4h16MSN9wCmTkLusLfmJwDmMvhzMyuEA==, tarball: file:projects/package-a.tgz}
-    name: '@rush-temp/package-a'
+  file:projects/airmusic-package-b.tgz:
+    resolution: {integrity: sha512-z6aB3xOpSMobmotrHNRyX/eqCsFB3XxBbi6QzpknxjFE8XOZ+/IwUaZRuiiwR0xB+XSca85A7MIMEaRXuY3OQQ==, tarball: file:projects/airmusic-package-b.tgz}
+    name: '@rush-temp/airmusic-package-b'
     version: 0.0.0
     dependencies:
       '@rushstack/heft': 0.44.2
@@ -537,9 +537,9 @@ packages:
       typescript: 4.5.5
     dev: false
 
-  file:projects/package-b.tgz:
-    resolution: {integrity: sha512-yMT9QkWsArwSLOy/CIiwGdsApBcLexri/oID7keAIl2K0OD+k0evbgiBXA7IUNjuEEQeChXdM0OChuWpiNRSdQ==, tarball: file:projects/package-b.tgz}
-    name: '@rush-temp/package-b'
+  file:projects/airmusic-package-c.tgz:
+    resolution: {integrity: sha512-bJOqwNCw8rm46SHBkHsJWhGnfGm8wW9DeS7c6SJxLZ2XHP+V+4JQexEKhDg9yBGlS/izbFBXLVAExYLjy1H9ZA==, tarball: file:projects/airmusic-package-c.tgz}
+    name: '@rush-temp/airmusic-package-c'
     version: 0.0.0
     dependencies:
       '@rushstack/heft': 0.44.2

@@ -296,12 +296,12 @@
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
      */
-     "defaultBranch": "main",
+    "defaultBranch": "main",
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
      * not set or if a remote matching the provided remote URL is not found.
      */
-     "defaultRemote": "origin"
+    "defaultRemote": "origin"
   },
 
   /**
@@ -389,14 +389,72 @@
    */
   "projects": [
     {
-      "packageName": "package-a",
-      "projectFolder": "packages/packageA",
-      "reviewCategory": "production"
+      "packageName": "airmusic-package-b",
+      "projectFolder": "packages/packageB",
+      "reviewCategory": "production",
+      "shouldPublish": true
     },
     {
-      "packageName": "package-b",
-      "projectFolder": "packages/packageB",
-      "reviewCategory": "production"
+      "packageName": "airmusic-package-c",
+      "projectFolder": "packages/packageC",
+      "reviewCategory": "production",
+      "shouldPublish": true
     }
+    // {
+    //   /**
+    //    * 项目的NPM包名称（必须与package.json匹配）。
+    //    */
+    //   "packageName": "my-app",
+
+    //   /**
+    //    *项目文件夹的路径，相对于rush.json配置文件。
+    //    */
+    //   "projectFolder": "apps/my-app",
+
+    //   /**
+    //    * 一个可选的类别，用于 "浏览器批准的软件包.json "中。
+    // *和 "非浏览器批准的软件包.json "文件中使用。 该值必须是
+    // * 上面定义的 "reviewCategories "中的字符串。
+    //    */
+    //   "reviewCategory": "production",
+
+    //   /**
+    //    * 一个本地项目的列表，这些项目作为这个项目的devDependencies出现，但不能被
+    // 因为它将创建一个循环的依赖关系；相反，最后公布的
+    // 的版本将被安装在公共文件夹中。
+    //    */
+    //   "cyclicDependencyProjects": [
+    //     // "my-toolchain"
+    //   ],
+
+    //   /**
+    //   * 如果为真，那么这个项目将被 "匆忙检查 "命令所忽略。
+    // * 默认值是false。
+    //    */
+    //   // "skipRushCheck": false,
+
+    //   /**
+    //    * 一个标志，表示这个项目的变化将被发布到npm，这将影响到
+    // * 拉什的变更和发布工作流程。默认值是false。
+    // * 注意："versionPolicyName "和 "shouldPublish "是替代的，你不能同时指定它们。
+    //    */
+    //   // "shouldPublish": false,
+
+    //   /**
+    //    * 便于在发布前对项目的文件进行后处理。
+    // *
+    // 如果指定，"publishFolder "是项目文件夹的一个子文件夹的相对路径。
+    // * "rush publish "命令将发布该子文件夹而不是项目文件夹。 该子文件夹
+    // 必须包含它自己的package.json文件，这通常是一个构建输出。
+    //    */
+    //   // "publishFolder": "temp/publish",
+
+    //   /**
+    //    * 一个与项目相关的可选的版本策略。 版本策略被定义在
+    // * 在 "version-policies.json "文件中。 更多信息请参见 "匆忙发布 "文档。
+    // * 注意："versionPolicyName "和 "shouldPublish "是备选的，你不能同时指定它们。
+    //    */
+    //   // "versionPolicyName": ""
+    // }
   ]
 }
