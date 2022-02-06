@@ -1,6 +1,4 @@
 {
-  "$schema": "http://json.schemastore.org/tsconfig",
-
   "compilerOptions": {
     "outDir": "dist",
     "rootDirs": ["src/"],
@@ -21,5 +19,5 @@
     "jsx": "react-jsx"
   },
   "include": ["src/**/*", "index.d.ts"],
-  "exclude": ["node_modules", "lib"]
+  "exclude": ["node_modules", "lib","dist"]
 }

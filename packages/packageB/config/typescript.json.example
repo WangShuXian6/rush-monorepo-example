@@ -1,0 +1,6 @@
+/**
+ *配置Heft的TypeScript插件。 这个插件也负责管理提示 linting.
+ */
+{
+    "extends": "../../../tsconfig.heft.json"
+}

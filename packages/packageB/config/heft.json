@@ -1,0 +1,55 @@
+/**
+ * Defines configuration used by core Heft.
+ * 定义了核心Heft所使用的配置。
+ */
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
+
+  "eventActions": [
+    {
+      /**
+       * The kind of built-in operation that should be performed. 应该执行的内置操作的种类。
+       * The "deleteGlobs" action deletes files or folders that match the "deleteGlobs "操作删除了符合下列条件的文件或文件夹
+       * specified glob patterns. 指定的glob模式。
+       */
+      "actionKind": "deleteGlobs",
+
+      /**
+       * The stage of the Heft run during which this action should occur. Note that actions specified in heft.json
+       * occur at the end of the stage of the Heft run.
+       * 这个动作应该发生在Heft运行的哪个阶段。请注意，在heft.json中指定的动作 中指定的动作会在 Heft 运行的阶段结束时发生。
+       */
+      "heftEvent": "clean",
+
+      /**
+       * A user-defined tag whose purpose is to allow configs to replace/delete handlers that were added by other
+       * configs. 一个用户定义的标签，其目的是允许配置者替换/删除由其他配置者添加的处理程序
+       */
+      "actionId": "defaultClean",
+
+      /**
+       * Glob patterns to be deleted. The paths are resolved relative to the project folder.
+       * 要删除的Glob模式。路径是相对于项目文件夹解决的。
+       */
+      "globsToDelete": ["dist", "lib", "temp"]
+    }
+  ],
+
+  /**
+   * The list of Heft plugins to be loaded. 要加载的Heft插件的列表。
+   */
+  "heftPlugins": [
+    // {
+    //  /**
+    //   * The path to the plugin package. 插件包的路径。
+    //   */
+    //  "plugin": "path/to/my-plugin",
+    //
+    //  /**
+    //   * An optional object that provides additional settings that may be defined by the plugin.
+    //   * 一个可选的对象，提供可由插件定义的额外设置。
+    //   */
+    //  // "options": { }
+    // }
+  ]
+}
