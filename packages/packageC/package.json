@@ -1,6 +1,6 @@
 {
-  "name": "airmusic-package-c",
-  "version": "1.0.7",
+  "name": "airmusic-package-cc",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "files": [

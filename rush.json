@@ -389,13 +389,13 @@
    */
   "projects": [
     {
-      "packageName": "airmusic-package-b",
+      "packageName": "airmusic-package-bb",
       "projectFolder": "packages/packageB",
       "reviewCategory": "production",
       "shouldPublish": true
     },
     {
-      "packageName": "airmusic-package-c",
+      "packageName": "airmusic-package-cc",
       "projectFolder": "packages/packageC",
       "reviewCategory": "production",
       "shouldPublish": true
