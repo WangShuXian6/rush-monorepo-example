@@ -1,0 +1,29 @@
+{
+  "name": "airmusic-package-b",
+  "entries": [
+    {
+      "version": "1.0.2",
+      "tag": "airmusic-package-b_v1.0.2",
+      "date": "Sun, 06 Feb 2022 06:06:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "bb"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.1",
+      "tag": "airmusic-package-b_v1.0.1",
+      "date": "Sun, 06 Feb 2022 06:03:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "b"
+          }
+        ]
+      }
+    }
+  ]
+}

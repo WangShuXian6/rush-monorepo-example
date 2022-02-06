@@ -41,3 +41,4 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 rush publish --apply --publish --registry https://registry.npmjs.org/ --npm-auth-token YWlybXVzaWM6a2VsZXFpc2h1aTg5MA== --add-commit-details
 rush publish --apply --publish --registry https://registry.npmjs.org/ --npm-auth-token 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 --add-commit-details
+rush publish --add-commit-details
